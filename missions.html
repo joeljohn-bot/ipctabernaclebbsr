@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missions - IPC Tabernacle, Bhubaneswar</title>
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--google fonts-->
+   <!--Lato-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <!--open sans-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <!--poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--bootstrap icons temporary-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <!--local css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">IPC Tabernacle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ministries.html">Ministries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="missions.html">Missions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="bi bi-chevron-double-up"></i>
+  </button>
+<!--ministries-->
+<div class="container">
+  <section class="p-5">
+    <div class="row">
+      <div class="col text-center">
+        <div class="row text-start pt-2">
+          <div class="col-12 col-md-6">
+            <h4 class="text-success bi bi-house-heart-fill"> WINGS Tailoring Center</h4>
+            <p>As a part of the skill development,  we train young girls in  tailoring. Many girls and women in village area succesfully completed their course and are now able to stand on their feet. This became a source of livelihood for many rural women. 
+            </p>
+            <h4 class="text-success bi bi-people-fill"> Youth Groups</h4>
+            <p>Youths are the cream and backbone of the society. Majority of our church members are students and youngsters. Through our Youth Ministry, we encourage and guide youngsters to share their concerns and help them to go more closer to God. Ocassionally, we conduct Youth Seminars and Retreat for their spiritual upliftment and wholistic development.
+            </p>
+            <h4 class="text-success bi bi-person-lines-fill"> Discipleship Center</h4>
+            <p>Leadership is voluntary but discipleship is mandatory. We conduct discipleship centres in different locations to equip local youths for witnessing Christ and studying the Word in the local language through short term courses.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <H4 class="text-success bi bi-bookmark-plus-fill"> Literature Ministries</H4>
+            <p>We involve in distributing and promoting Christian literature in vernacular language through translating books to local language and putting stalls in different book fairs and exhibitions.
+            </p>
+            <H4 class="text-success bi bi-chat-heart-fill"> Evangelism</H4>
+            <p>We conduct study classes, camps and retreats for the genuine seekers. It helps them for their spiritual growth and maturity.
+            </p>
+          </p>
+          <H4 class="text-success bi bi-handbag-fill"> Relief Works</H4>
+          <p>We conduct study classes, camps and retreats for the genuine seekers. It helps them for their spiritual growth and maturity.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<section class="">
+  <footer class="pt-4 pb-4 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <p>© 2021 IPC Tabernacle, Bhubaneswar. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+</div>
+<script>
+  //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+  document.body.scrollTop > 20 ||
+  document.documentElement.scrollTop > 20
+) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+<!--bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
